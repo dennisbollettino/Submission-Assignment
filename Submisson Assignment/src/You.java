@@ -1,3 +1,5 @@
+import java.util.concurrent.SynchronousQueue;
+
 /**
  * 
  * @author //Put your first and last name here
@@ -26,5 +28,31 @@ public class You{
 	private int age;
 
 	// Write your code here
+	public void You()
+	{
+		firstName = "Dennis";
+		lastName = "Bollettino";
+		favoriteAnimal = "Doggy";
+		age = 17;
+	}
+	
+	String getFullName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	String setFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return animal;
+	}
+	
+	int happyBirthday()
+	{
+		System.out.println("Happy Birthday!");
+		age++;
+		return age;
+	}
+	
 	
 }
